@@ -1,0 +1,104 @@
+aside {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    position: relative;
+}
+
+.collapser {
+    transition: left, right, .3s;
+    position: absolute;
+    right: -30px;
+    top: 35px;
+    background-color: #535bf2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50%);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+}
+
+.collapser:hover {
+    color: #fff;
+    background-color: #747bff;
+}
+
+.collapser-close {
+    transform: rotateZ(180deg);
+}
+
+.sidebar {
+    overflow: hidden;
+    background-color: rgba(136, 178, 237, 0.17);
+    height: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 420px;
+    transition: width 100ms linear;
+}
+
+.sidebar-close {
+    width: 100px;
+}
+
+.sidebar-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sidebar-header img {
+    width: 4rem;
+    margin: 0;
+}
+
+.sidebar-main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.sidebar-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar-controls svg {
+    width: 4rem;
+}
+
+.sidebar-content {
+    flex: 1;
+    min-width: 240px;
+}
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    color: #b5b5b5;
+}
+
+.sidebar-footer-close {
+    margin: auto;
+}
+
+.sidebar-footer svg {
+    width: 4rem;
+}
+
+.sidebar-footer span {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+}
